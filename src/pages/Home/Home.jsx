@@ -29,7 +29,7 @@ const features = [
 
 export default function Home() {
     return (
-        <div className="bg-white py-24 sm:py-32">
+        <div className="bg-white py-12 sm:py-32 bg-white">
             <div className="mx-auto max-w-7xl px-6 lg:px-8">
                 <div className="mx-auto max-w-2xl lg:text-center">
                     <h2 className="text-base font-semibold leading-7 text-lime-700">Weed Grow App</h2>
@@ -45,7 +45,7 @@ export default function Home() {
                         {features.map((feature) => (
                             <div key={feature.name} className="relative pl-16">
                                 <dt className="text-base font-semibold leading-7 text-gray-900">
-                                    <div className="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-lime-700">
+                                    <div className="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-lime-700 cursor-pointer">
                                         <feature.icon className="h-6 w-6 text-white" aria-hidden="true" />
                                     </div>
                                     {feature.name}
