@@ -1,11 +1,11 @@
-import { PencilIcon, PhotoIcon, PresentationChartBarIcon } from '@heroicons/react/24/outline'
+import { ClipboardDocumentListIcon, PhotoIcon, CalendarDaysIcon, PencilIcon } from '@heroicons/react/24/outline'
 
 const features = [
     {
-        name: 'Anotaciones',
+        name: 'Informes',
         description:
             'Sección para realizar informes de riegos o días de aplicación de fertilizantes.',
-        icon: PencilIcon,
+        icon: ClipboardDocumentListIcon,
     },
     {
         name: 'Imagenes',
@@ -17,7 +17,13 @@ const features = [
         name: 'Control de Edades',
         description:
             'Aca podés consultar la edad de cada planta.',
-        icon: PresentationChartBarIcon,
+        icon: CalendarDaysIcon,
+    },
+    {
+        name: 'Anotaciones Importantes',
+        description:
+            'Notas Importantes, de información a tener en cuenta',
+        icon: PencilIcon,
     },
 ]
 
@@ -26,7 +32,7 @@ export default function Home() {
         <div className="bg-white py-24 sm:py-32">
             <div className="mx-auto max-w-7xl px-6 lg:px-8">
                 <div className="mx-auto max-w-2xl lg:text-center">
-                    <h2 className="text-base font-semibold leading-7 text-lime-700">Weed Grow</h2>
+                    <h2 className="text-base font-semibold leading-7 text-lime-700">Weed Grow App</h2>
                     <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
                         Destinada al control y crecimiento del Cannabis
                     </p>
