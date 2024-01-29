@@ -7,24 +7,28 @@ const features = [
         description:
             'Sección para realizar informes de riegos o días de aplicación de fertilizantes.',
         icon: ClipboardDocumentListIcon,
+        url: "/informes"
     },
     {
         name: 'Control de Desarrollo',
         description:
             'Aca podés consultar la edad de cada planta.',
         icon: CalendarDaysIcon,
+        url: "/desarrollo"
     },
     {
         name: 'Imagenes',
         description:
             'Sección de Imagenes de las plantas. Para controlar su crecimiento.',
         icon: PhotoIcon,
+        url: "/imagenes"
     },
     {
         name: 'Anotaciones Importantes',
         description:
             'Notas Importantes, de información a tener en cuenta',
         icon: PencilIcon,
+        url: "/anotaciones"
     },
 ]
 
@@ -46,9 +50,9 @@ export default function Home() {
                         {features.map((feature) => (
                             <div key={feature.name} className="relative pl-16">
                                 <dt className="text-base font-semibold leading-7 text-gray-900 mt-3">
-                                    <div className="absolute left-0 top-8 flex h-10 w-10 items-center justify-center rounded-lg bg-lime-700 cursor-pointer">
+                                    <Link to={feature.url} className="absolute left-0 top-8 flex h-10 w-10 items-center justify-center rounded-lg bg-lime-700 cursor-pointer">
                                         <feature.icon className="h-6 w-6 text-white" aria-hidden="true" />
-                                    </div>
+                                    </Link>
                                     {feature.name}
                                 </dt>
                                 <dd className="text-base leading-7 text-gray-600">{feature.description}</dd>
