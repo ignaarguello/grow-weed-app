@@ -1,5 +1,10 @@
+import TituloPages from '../../components/TituloPages/TituloPages'
+
+
 export default function Imagenes() {
   return (
-    <div>Imagenes</div>
+    <div>
+      <TituloPages titulo='Imagenes' />
+    </div>
   )
 }

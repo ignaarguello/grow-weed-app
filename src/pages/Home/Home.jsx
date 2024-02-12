@@ -34,15 +34,15 @@ const features = [
 
 export default function Home() {
     return (
-        <div className="bg-white py-8 sm:py-32 bg-white">
+        <div className="bg-white h-screen flex justify-center items-center">
             <div className="mx-auto max-w-7xl px-6 lg:px-8">
                 <div className="mx-auto max-w-2xl lg:text-center">
-                    <h2 className="text-base font-semibold leading-7 text-lime-700">Weed Grow App</h2>
+                    <h2 className="text-base font-semibold leading-7 text-lime-700">Grow Weed App</h2>
                     <p className="mt-4 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
                         Destinada al control y crecimiento del Cannabis
                     </p>
                     <p className="mt-8 text-lg leading-8 text-gray-600">
-                        Una aplicación creada para realizar informes, subir fotos y llevar un control del periodo de crecimiento de las plantas. Pudiendo saber su edad, su genetica y demás.
+                        Aplicación creada para realizar informes, subir fotos y llevar un control del periodo de crecimiento de las plantas. Pudiendo saber su edad, su genetica y demás.
                     </p>
                 </div>
                 <div className="mx-auto mt-10 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-4xl">
