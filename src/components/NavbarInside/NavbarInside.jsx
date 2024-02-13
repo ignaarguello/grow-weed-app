@@ -1,6 +1,8 @@
 import { Fragment, useState } from 'react'
 import { Dialog, Popover, Tab, Transition } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
+import { Link } from 'react-router-dom';
+
 
 const navigation = {
     categories: [
@@ -10,10 +12,11 @@ const navigation = {
                     id: 'secciones',
                     name: 'Secciones',
                     items: [
-                        { name: 'Informes', href: '#' },
-                        { name: 'Desarrollo', href: '#' },
-                        { name: 'Imagenes', href: '#' },
-                        { name: 'Anotaciones', href: '#' },
+                        { name: 'Home', href: '/' },
+                        { name: 'Informes', href: '/informes' },
+                        { name: 'Desarrollo', href: '/desarrollo' },
+                        { name: 'Imagenes', href: '/imagenes' },
+                        { name: 'Anotaciones', href: '/anotaciones' },
                     ],
                 },
             ],
@@ -87,9 +90,9 @@ export default function Example() {
                                                         >
                                                             {section.items.map((item) => (
                                                                 <li key={item.name} className="flow-root">
-                                                                    <a href={item.href} className="-m-2 block p-2 text-gray-500">
+                                                                    <Link to={item.href} className="-m-2 block p-2 text-gray-500">
                                                                         {item.name}
-                                                                    </a>
+                                                                    </Link>
                                                                 </li>
                                                             ))}
                                                         </ul>
