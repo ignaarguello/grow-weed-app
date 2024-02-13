@@ -34,7 +34,7 @@ const features = [
 
 export default function Home() {
     return (
-        <div className="bg-white h-screen flex justify-center items-center">
+        <div className="bg-white h-full flex justify-center items-center mt-10 lg:mt-20">
             <div className="mx-auto max-w-7xl px-6 lg:px-8">
                 <div className="mx-auto max-w-2xl lg:text-center">
                     <h2 className="text-base font-semibold leading-7 text-lime-700">Grow Weed App</h2>
