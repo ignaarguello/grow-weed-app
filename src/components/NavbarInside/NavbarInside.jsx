@@ -67,10 +67,9 @@ export default function Example() {
                                         <XMarkIcon className="h-6 w-6" aria-hidden="true" />
                                     </button>
                                 </div>
-
                                 {/* Links */}
                                 <Tab.Group as="div">
-                                    <p className="flex h-10 items-center bg-lime-700 px-4 mt-4 text-sm font-light text-white sm:px-6 lg:px-8">
+                                    <p className="flex h-10 items-center bg-lime-700 px-4 text-sm font-light text-white sm:px-6 lg:px-8 mt-4">
                                         Grow Weed App
                                     </p>
                                     <Tab.Panels as={Fragment}>
@@ -120,11 +119,7 @@ export default function Example() {
             </Transition.Root>
 
             <header className="relative bg-white">
-                <p className="flex h-10 items-center justify-center bg-lime-700 px-4 text-sm font-medium text-white sm:px-6 lg:px-8">
-                    Grow Weed App
-                </p>
-
-                <nav aria-label="Top" className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+                <nav aria-label="Top" className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 lg:w-screen">
                     <div className="border-b border-gray-200">
                         <div className="flex h-16 items-center">
                             <button
@@ -217,7 +212,7 @@ export default function Example() {
                                     ))}
                                 </div>
                             </Popover.Group>
-
+                            {/* Navbar Desktop */}
                             <div className="ml-auto flex items-center">
                                 <div className="hidden lg:flex lg:flex-1 lg:items-center lg:justify-end lg:space-x-6">
                                     <a href="#" className="text-sm font-medium text-gray-700 hover:text-gray-800">
@@ -225,7 +220,7 @@ export default function Example() {
                                     </a>
                                     <span className="h-6 w-px bg-gray-200" aria-hidden="true" />
                                     <a href="#" className="text-sm font-medium text-gray-700 hover:text-gray-800">
-                                        Create account
+                                        Crear Cuenta
                                     </a>
                                 </div>
                             </div>

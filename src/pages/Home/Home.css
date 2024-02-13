@@ -1,0 +1,10 @@
+:root {
+  --color-1: #052e16;
+  --color-2: #a3e635;
+}
+
+#tituloGrowWeed {
+  background-image: linear-gradient(to right, var(--color-1) 0%, var(--color-2) 100%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

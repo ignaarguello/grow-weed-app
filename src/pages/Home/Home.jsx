@@ -1,5 +1,7 @@
 import { ClipboardDocumentListIcon, PhotoIcon, CalendarDaysIcon, PencilIcon } from '@heroicons/react/24/outline'
 import { Link } from 'react-router-dom';
+import './Home.css'
+import NavbarInside from '../../components/NavbarInside/NavbarInside'
 
 const features = [
     {
@@ -34,23 +36,24 @@ const features = [
 
 export default function Home() {
     return (
-        <div className="bg-white h-full flex justify-center items-center mt-10 lg:mt-20">
-            <div className="mx-auto max-w-7xl px-6 lg:px-8">
-                <div className="mx-auto max-w-2xl lg:text-center">
-                    <h2 className="text-base font-semibold leading-7 text-lime-700">Grow Weed App</h2>
-                    <p className="mt-4 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+        <div className="bg-white h-full flex justify-center items-center mt-2 lg:mt-10">
+            <div className="mx-auto max-w-7xl px-2 lg:px-8">
+            <NavbarInside />
+                <div className="mx-auto max-w-2xl lg:text-center p-4">
+                    <h2 className="text-base font-semibold leading-7 text-lime-700  mt-4 lg:text-4xl" id='tituloGrowWeed'>Grow Weed App</h2>
+                    <p className="mt-8 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
                         Destinada al control y crecimiento del Cannabis
                     </p>
                     <p className="mt-8 text-lg leading-8 text-gray-600">
                         Aplicación creada para realizar informes, subir fotos y llevar un control del periodo de crecimiento de las plantas. Pudiendo saber su edad, su genetica y demás.
                     </p>
                 </div>
-                <div className="mx-auto mt-10 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-4xl">
-                    <dl className="grid max-w-xl grid-cols-1 gap-x-8 gap-y-10 lg:max-w-none lg:grid-cols-2 lg:gap-y-16">
+                <div className="mx-auto mt-6 max-w-2xl sm:mt-20 lg:mt-6 lg:max-w-5xl p-4">
+                    <dl className="grid max-w-xl grid-cols-1 gap-x-8 gap-y-10 lg:max-w-none lg:grid-cols-2 lg:gap-y-18">
                         {features.map((feature) => (
                             <div key={feature.name} className="relative pl-16">
                                 <dt className="text-base font-semibold leading-7 text-gray-900 mt-3">
-                                    <Link to={feature.url} className="absolute left-0 top-8 flex h-10 w-10 items-center justify-center rounded-lg bg-lime-700 cursor-pointer">
+                                    <Link to={feature.url} className="absolute left-0 top-8 flex h-10 w-10 items-center justify-center rounded-lg bg-lime-600 cursor-pointer">
                                         <feature.icon className="h-6 w-6 text-white" aria-hidden="true" />
                                     </Link>
                                     {feature.name}
