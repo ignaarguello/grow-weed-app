@@ -1,0 +1,59 @@
+:root {
+  --color-1: #052e16;
+  --color-2: #a3e635;
+}
+
+#tituloGrowWeed {
+  background-image: linear-gradient(
+    to right,
+    var(--color-1) 0%,
+    var(--color-2) 100%
+  );
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@media screen and (min-width: 320px) {
+  #contenedor-cards-refs {
+    /* border: 2px solid red; */
+    margin: 1rem 0 2rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    justify-content: center;
+  }
+
+  .card-ref {
+    /* border: 2px solid forestgreen; */
+    height: 10em;
+    border-radius: 15px;
+    background-color: #000000e3;
+    display: flex;
+    align-items: center;
+  }
+
+  #icon-card-refs {
+    /* border: 2px solid green; */
+    height: 80%;
+    width: 20%;
+    padding: 1rem;
+    color: #20b200;
+    border-right: 0.5px solid gray;
+  }
+
+  #contenedor-info-cards {
+    /* border: 2px solid blue; */
+    width: 80%;
+    text-align: center;
+    padding: 1rem;
+  }
+}
+
+@media screen and (min-width: 414px) {
+  #contenedor-cards-refs {
+    margin: 2rem 0 2rem 0;
+  }
+  #icon-card-refs {
+    padding: 1.5rem;
+  }
+}

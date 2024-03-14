@@ -1,16 +1,18 @@
 import './Home.css'
-import NavbarInside from '../../components/NavbarInside/NavbarInside'
 import 'animate.css';
+
+// Import de componentes
+import NavbarInside from '../../components/NavbarInside/NavbarInside'
+import CHome_1 from '../../components/ComponentsHome/CHome_1/CHome_1'
+import CHome_2 from '../../components/ComponentsHome/CHome_2/CHome_2'
 
 
 export default function Home() {
     return (
-        <div>
+        <>
             <NavbarInside />
-            <div id='container-image-title_Home'>
-                <h2 id='titulo-grow-weed' className='text-3xl font-extralight tracking-tight text-gray-900 animate__animated animate__fadeIn animate__delay-2s'>Grow Weed</h2>
-                <h3 id='titulo-making-nature' className='text-1xl font-extralight tracking-tight text-gray-500 animate__animated animate__fadeIn animate__delay-2s'>Making Nature</h3>
-            </div>
-        </div>
+            <CHome_1 />
+            <CHome_2 />
+        </>
     )
 }

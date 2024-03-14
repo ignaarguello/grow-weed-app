@@ -15,8 +15,6 @@ const navigation = {
                         { name: 'Home', href: '/' },
                         { name: 'Informes', href: '/informes' },
                         { name: 'Desarrollo', href: '/desarrollo' },
-                        { name: 'Imagenes', href: '/imagenes' },
-                        { name: 'Anotaciones', href: '/anotaciones' },
                     ],
                 },
             ],
@@ -90,7 +88,7 @@ export default function Example() {
                                                         >
                                                             {section.items.map((item) => (
                                                                 <li key={item.name} className="flow-root">
-                                                                    <Link to={item.href} className="-m-2 block p-2 text-gray-500">
+                                                                    <Link to={item.href} className="-m-2 block p-1 text-gray-500">
                                                                         {item.name}
                                                                     </Link>
                                                                 </li>
