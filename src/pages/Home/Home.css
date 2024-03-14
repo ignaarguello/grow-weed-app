@@ -3,8 +3,34 @@
   --color-2: #a3e635;
 }
 
-#tituloGrowWeed {
-  background-image: linear-gradient(to right, var(--color-1) 0%, var(--color-2) 100%);
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
+@keyframes iluminarBackground {
+  from {
+    background-color: rgba(0, 0, 0, 0.668);
+  }
+  to {
+    background-color: rgba(0, 0, 0, 0.168);
+  }
+}
+
+@media screen and (min-width: 320px) {
+  #container-image-title_Home {
+    height: 100vh;
+    background-image: url("https://marketplace.canva.com/eEfkI/MAFktreEfkI/1/s2/canva-young-cannabis-plant-MAFktreEfkI.jpg");
+    background-size: cover;
+    background-position-x: -270px;
+    background-repeat: no-repeat;
+    background-blend-mode: multiply;
+    animation: iluminarBackground 2.3s ease;
+    animation-delay: 1.3s;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 1.5rem;
+  }
+
+  #titulo-grow-weed{
+    color: white;
+    letter-spacing: .5px;
+    margin-top: .5em;
+  }
 }

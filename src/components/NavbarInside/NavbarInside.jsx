@@ -32,7 +32,7 @@ export default function Example() {
     const [open, setOpen] = useState(false)
 
     return (
-        <div className="bg-white">
+        <div className="bg-black">
             {/* Mobile menu */}
             <Transition.Root show={open} as={Fragment}>
                 <Dialog as="div" className="relative z-40 lg:hidden" onClose={setOpen}>
@@ -121,13 +121,13 @@ export default function Example() {
                 </Dialog>
             </Transition.Root>
 
-            <header className="relative bg-white">
+            <header className="relative bg-current">
                 <nav aria-label="Top" className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 lg:w-screen">
-                    <div className="border-b border-gray-200">
+                    <div className="border-b border-current">
                         <div className="flex h-16 items-center">
                             <button
                                 type="button"
-                                className="relative rounded-md bg-white p-2 text-gray-400 lg:hidden"
+                                className="relative rounded-md bg-black p-2 text-gray-200 lg:hidden"
                                 onClick={() => setOpen(true)}
                             >
                                 <span className="absolute -inset-0.5" />
