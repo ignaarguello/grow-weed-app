@@ -38,8 +38,8 @@ export default function CHome_1() {
                             <Link className="card-ref" key={index} to={elem.url}>
                                 <elem.icon className="text-white" id='icon-card-refs' aria-hidden="true" />
                                 <div id='contenedor-info-cards'>
-                                    <h2 className='font-medium tracking-tight text-gray-400 text-base'>{elem.name}</h2>
-                                    <h4 className='font-normal tracking-tight text-gray-600 text-sm mt-2'>{elem.description}</h4>
+                                    <h2 className='font-medium tracking-tight text-gray-300 text-base'>{elem.name}</h2>
+                                    <h4 className='font-normal tracking-tight text-gray-400 text-sm mt-2'>{elem.description}</h4>
                                 </div>
                             </Link>
                         )
