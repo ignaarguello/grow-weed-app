@@ -3,6 +3,7 @@
   --color-2: #a3e635;
 }
 
+
 @keyframes iluminarBackground {
   from {
     background-color: rgba(0, 0, 0, 0.668);
@@ -28,9 +29,26 @@
     padding: 1.5rem;
   }
 
-  #titulo-grow-weed{
+  #titulo-grow-weed {
     color: white;
-    letter-spacing: .5px;
-    margin-top: .5em;
+    letter-spacing: 0.5px;
+    margin-top: 0.5em;
+  }
+}
+
+@media screen and (min-width: 414px) {
+  #container-image-title_Home {
+    padding: 2.2rem;
+  }
+  #titulo-grow-weed {
+    color: white;
+    letter-spacing: 0.5px;
+    margin-top: 0.5em;
+    font-size: 2.5em;
+  }
+
+  #titulo-making-nature {
+    margin-top: .3em;
+    font-size: 1.2em;
   }
 }
