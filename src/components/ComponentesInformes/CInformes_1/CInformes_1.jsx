@@ -36,7 +36,6 @@ export default function CInformes_1() {
                         </li>
                     ))}
                 </ul>
-                Hola
             </div>
         </div>
     )
