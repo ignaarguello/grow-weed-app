@@ -1,32 +1,26 @@
 import './CInformes_1.css'
-import { useState, useEffect } from 'react';
-import axios from 'axios';
-import { URL_BASE } from '../../../Api/Api'
+import { useEffect } from 'react';
+import { useDispatch, useSelector } from 'react-redux'
+import { informesActions } from '../../../redux/actions/Informes';
 
 export default function CInformes_1() {
-    const [dataInformes, setDataInformes] = useState([])
+    const dispatch = useDispatch()
+    const { informes } = useSelector(store => store.informes)
+    const { getInformes } = informesActions
+
 
     useEffect(() => {
-        const fetchData = async () => {
-            try {
-                const response = await axios.get(`${URL_BASE}/informes`);
-                setDataInformes(response.data);
+        dispatch(getInformes())
 
-                console.log(response.data)
-            } catch (error) {
-                console.error('Error al obtener datos:', error);
-            }
-        };
-
-        fetchData();
+        console.log(informes)
     }, []);
     return (
         <div id='Contenedor-CI_1'>
             <h2 id='titulo-seccionInformes' className='font-extralight tracking-tight text-white'>Sección Informes</h2>
             <div id='contenedor-dataInformes'>
                 <ul role="list" className="divide-y divide-gray-100">
-                    {dataInformes.map((item) => (
-                        <li key={dataInformes.nombre} className="flex justify-between gap-x-6 py-5">
+                    {informes?.map((item) => (
+                        <li key={item.nombre} className="flex justify-between gap-x-6 py-5">
                             <div className="flex min-w-0 gap-x-4">
                                 <img className="h-14 w-14 flex-none rounded-full bg-gray-50 border-solid border-2 border-amber-700" style={{ objectFit: 'cover' }} src={'https://marketplace.canva.com/_zKoo/MAFVqF_zKoo/1/s2/canva-sin-t%C3%ADtulo-MAFVqF_zKoo.jpg'} alt="" />
                                 <div className="min-w-0 flex-auto">

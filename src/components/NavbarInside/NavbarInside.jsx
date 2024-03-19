@@ -73,7 +73,7 @@ export default function Example() {
                                     <p className="flex h-10 items-center bg-lime-700 px-4 text-sm font-light text-white sm:px-6 lg:px-8 mt-4">
                                         Grow Weed App
                                     </p>
-                                    <Tab.Panels as={Fragment}>
+                                    <Tab.Panels key={'Hola'} as={Fragment}>
                                         {navigation.categories.map((category) => (
                                             <Tab.Panel key={category.name} className="space-y-10 px-4 pb-8 pt-10">
                                                 {category.sections.map((section) => (
@@ -132,19 +132,6 @@ export default function Example() {
                                 <span className="sr-only">Open menu</span>
                                 <Bars3Icon className="h-6 w-6" aria-hidden="true" />
                             </button>
-
-                            {/* Logo */}
-                            {/* <div className="ml-4 flex lg:ml-0">
-                                <a href="#">
-                                    <span className="sr-only">Your Company</span>
-                                    <img
-                                        className="h-8 w-auto"
-                                        src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
-                                        alt=""
-                                    />
-                                </a>
-                            </div> */}
-                            {/* Flyout menus */}
                             <Popover.Group className="hidden lg:ml-8 lg:block lg:self-stretch">
                                 <div className="flex h-full space-x-8">
                                     {navigation.categories.map((category) => (
