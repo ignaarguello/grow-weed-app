@@ -2,15 +2,11 @@ import { createReducer } from "@reduxjs/toolkit";
 import { informesActions } from "../actions/Informes";
 
 
-const { getInformes } = informesActions;
+const { getInformes, getInforme_ID } = informesActions;
 
 const initialState = {
     informes: [],
-    nombre: '',
-    fecha: '',
-    descripcion: '',
-    uso_fertilizante: '',
-    transplantes: '',
+    informe_id: [],
 }
 
 const informesReducer = createReducer(initialState, (builder) => {
@@ -20,6 +16,13 @@ const informesReducer = createReducer(initialState, (builder) => {
             return {
                 ...state,
                 informes: action.payload.data
+            }
+        })
+        .addCase(getInforme_ID.fulfilled, (state, action) => {
+            console.log(action.payload.data)
+            return {
+                ...state,
+                informe_id: action.payload.data
             }
         })
 })

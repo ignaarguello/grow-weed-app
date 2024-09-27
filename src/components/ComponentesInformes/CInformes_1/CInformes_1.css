@@ -1,20 +1,24 @@
 @media screen and (min-width: 320px) {
+  /* Contenedor General */
   #Contenedor-CI_1 {
-    /* border: 2px solid greenyellow; */
+   /*  border: 4px solid greenyellow; */
   }
 
+  /* Titulo Seccion Informes */
   #titulo-seccionInformes {
     background-color: black;
     margin-top: 3rem;
     display: inline-block;
-    padding: 5px;
+    padding: 15px;
     width: 60%;
     border-radius: 0px 20px 20px 0px;
     padding-left: 0.8rem;
+    font-size: 17px;
   }
 
+  /* Contenedor de la data de informes */
   #contenedor-dataInformes{
-      /* border: 2px solid blue; */
+  /*     border: 4px solid blue; */
       margin: 1rem 0;
       padding: .5rem;
   }

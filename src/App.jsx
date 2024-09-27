@@ -9,6 +9,7 @@ import Informes from './pages/Informes/Informes'
 import Desarrollo from './pages/Desarrollo/Desarrollo'
 import Imagenes from './pages/Imagenes/Imagenes'
 import Anotaciones from './pages/Anotaciones/Anotaciones';
+import InformesDetails from './components/InformesDetails/InformesDetails'
 
 function App() {
 
@@ -22,6 +23,7 @@ function App() {
             <Route path="/desarrollo" element={<Desarrollo />} />
             <Route path="/imagenes" element={<Imagenes />} />
             <Route path="/anotaciones" element={<Anotaciones />} />
+            <Route path="/informes/:id" element={<InformesDetails />} />
           </Routes>
         </BrowserRouter>
       </Provider>
