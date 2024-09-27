@@ -11,9 +11,9 @@ export default function CInformes_1() {
 
     useEffect(() => {
         dispatch(getInformes())
-
         console.log(informes)
     }, []);
+    
     return (
         <div id='Contenedor-CI_1'>
             <h2 id='titulo-seccionInformes' className='font-extralight tracking-tight text-white'>Sección Informes</h2>

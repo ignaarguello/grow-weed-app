@@ -6,15 +6,20 @@ const { getInformes } = informesActions;
 
 const initialState = {
     informes: [],
+    nombre: '',
+    fecha: '',
+    descripcion: '',
+    uso_fertilizante: '',
+    transplantes: '',
 }
 
 const informesReducer = createReducer(initialState, (builder) => {
     builder
         .addCase(getInformes.fulfilled, (state, action) => {
-            console.log('Action de informes', action)
+            console.log(action)
             return {
                 ...state,
-                informes: action.payload
+                informes: action.payload.data
             }
         })
 })
