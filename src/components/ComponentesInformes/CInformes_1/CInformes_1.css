@@ -18,9 +18,41 @@
 
   /* Contenedor de la data de informes */
   #contenedor-dataInformes{
-  /*     border: 4px solid blue; */
+ /*      border: 4px solid blue; */
       margin: 1rem 0;
-      padding: .5rem;
+  }
+  
+  /* Titulo Nombre de cada item */
+  #TituloNombreItem_CInformes1{
+  /*   border: 2px solid blue; */
+    width: 8rem;
+    margin-right: 2.5rem;
+  }
+
+  /* Button Ver Mas */
+  #ButtonVerMas_CInformes1{
+    width: 5rem;
+    height: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    background-color: black;
+    border-radius: 5px;
+    color: white;
+  }
+
+  /* Contenedor del icono delete */
+  #ContenedorIconoDelete_CInformes1{
+/*     background-color: red; */
+    width: 5rem;
+    height: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    background-color: red;
+    border-radius: 5px;
   }
 
 }
