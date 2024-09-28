@@ -3,7 +3,6 @@ import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux'
 import { informesActions } from '../../../redux/actions/Informes';
 import { Link } from 'react-router-dom';
-import { TiDelete } from "react-icons/ti";
 
 export default function CInformes_1() {
     const dispatch = useDispatch()
