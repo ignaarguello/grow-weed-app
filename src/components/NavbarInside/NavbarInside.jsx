@@ -17,6 +17,7 @@ const navigation = {
                     items: [
                         { name: 'Home', href: '/' },
                         { name: 'Informes', href: '/informes' },
+                        { name: 'Riegos', href: '/riegos' },
                         { name: 'Desarrollo', href: '/desarrollo' },
                     ],
                 },

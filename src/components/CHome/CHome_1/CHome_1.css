@@ -1,7 +1,7 @@
 :root {
   --color-1: #052e16;
   --color-2: #a3e635;
-  --margin--titles: 5rem;
+  --margin--titles: 7rem;
 }
 
 @keyframes iluminarBackground {
@@ -47,6 +47,11 @@
     color: white;
     letter-spacing: 0.5px;
     margin-top: 0.5em;
+  }
+
+  /* Barra Navegacion */
+  #BarraNavegacion_CHome1 {
+    display: none;
   }
 }
 
@@ -105,6 +110,7 @@
     color: white;
     letter-spacing: 0.5px;
     margin-right: var(--margin--titles);
+    margin-top: 3rem;
     font-size: 4rem;
   }
 
@@ -113,6 +119,37 @@
     font-size: 1.2em;
     margin-top: 0.8rem;
     margin-right: var(--margin--titles);
-    margin-bottom: 8rem;
   }
+
+  /* Barra Navegacion */
+  #BarraNavegacion_CHome1 {
+    /* border: 2px solid red; */
+    display: block;
+    height: 30%;
+    margin-right: 6.5rem;
+    margin-top: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 3rem;
+    text-align: center;
+  }
+
+  /* Anchor - Link - Ref */
+  .Anchor_CHome1 {
+    /* border: 2px solid greenyellow; */
+    color: whitesmoke;
+    font-size: 1.5rem;
+    width: 100%;
+    border-right: 1px solid gainsboro;
+    padding: 0.5rem;
+    font-weight: 200;
+    transition: 0.3s ease;
+    padding-right: .8rem;
+  }
+
+  .Anchor_CHome1:hover{
+    padding-right: 1.5rem;
+  }
+  
 }
