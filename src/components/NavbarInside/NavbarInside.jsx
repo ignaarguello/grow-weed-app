@@ -2,6 +2,7 @@ import { Fragment, useState } from 'react'
 import { Dialog, Popover, Tab, Transition } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import { Link } from 'react-router-dom';
+import './NavbarInside.css'
 
 
 const navigation = {
@@ -103,12 +104,12 @@ export default function Example() {
                                 {/* Ingreso y Crear cuenta en Mobile */}
                                 <div className="space-y-6 border-t border-gray-200 px-4 py-6">
                                     <div className="flow-root">
-                                        <a href="#" className="-m-2 block p-2 font-medium text-gray-900">
+                                        <a href="#" className="-m-2 block p-2 font-medium text-red-900">
                                             Ingreso
                                         </a>
                                     </div>
                                     <div className="flow-root">
-                                        <a href="#" className="-m-2 block p-2 font-medium text-gray-900">
+                                        <a href="#" className="-m-2 block p-2 font-medium text-lime-900">
                                             Crear Cuenta
                                         </a>
                                     </div>
@@ -201,15 +202,10 @@ export default function Example() {
                                 </div>
                             </Popover.Group>
                             {/* Navbar Desktop */}
-                            <div className="ml-auto flex items-center">
-                                <div className="hidden lg:flex lg:flex-1 lg:items-center lg:justify-end lg:space-x-6">
-                                    <a href="#" className="text-sm font-medium text-gray-700 hover:text-gray-800">
-                                        Ingreso
-                                    </a>
-                                    <span className="h-6 w-px bg-gray-200" aria-hidden="true" />
-                                    <a href="#" className="text-sm font-medium text-gray-700 hover:text-gray-800">
-                                        Crear Cuenta
-                                    </a>
+                            <div id='ContenedorGeneralDesktop_NI' className="ml-auto flex items-center">
+                                <h2 id='TituloGrowWeedApp_NI'>Grow Weed App</h2>
+                                <div id="SubContenedorAnchors_NI">
+
                                 </div>
                             </div>
                         </div>

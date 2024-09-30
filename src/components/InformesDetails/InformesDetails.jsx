@@ -35,20 +35,20 @@ export default function InformesDetails() {
       {/* Contenedor de los Detalles */}
       <div id='ContenedorDetalles_InformesID'>
         <h2 className='LabelItem_InformesID'>Nombre:</h2>
-        <h3>{informe_id.nombre}</h3>
+        <h3 className='ItemBold_InformerID'>{informe_id.nombre}</h3>
         <h2 className='LabelItem_InformesID'>Fecha:</h2>
-        <h3>{informe_id.fecha}</h3>
+        <h3 className='ItemBold_InformerID'>{informe_id.fecha}</h3>
         <h2 className='LabelItem_InformesID'>Transplante:</h2>
         {informe_id.transplantes ? (
-          <h2>Hay datos de transplantes</h2>
+          <h2 className='ItemBold_InformerID'>Hay datos de transplantes</h2>
         ) : (
-          <h2>No hay datos de transplantes</h2>
+          <h2 className='ItemBold_InformerID'>No hay datos de transplantes</h2>
         )}
         <h2 className='LabelItem_InformesID'>Fertilizantes:</h2>
         {informe_id.uso_fertilizantes ? (
-          <h2>Positivo de Fertilizantes</h2>
+          <h2 className='ItemBold_InformerID'>Positivo de Fertilizantes</h2>
         ) : (
-          <h2>No hay datos de uso de fertilizantes</h2>
+          <h2 className='ItemBold_InformerID'>No hay datos de uso de fertilizantes</h2>
         )}
       </div>
     </div>

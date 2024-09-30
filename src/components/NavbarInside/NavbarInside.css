@@ -1,0 +1,27 @@
+/* Resolucion 1440px - Macbook  */
+@media screen and (min-width: 1440px) {
+  /* Contenedor General del Navbar en Desktop */
+  #ContenedorGeneralDesktop_NI {
+    width: 100%;
+    display: flex;
+    padding: 1rem;
+    margin-top: 4rem;
+    border-radius: 50px;
+    backdrop-filter: blur(19px) saturate(189%);
+    -webkit-backdrop-filter: blur(19px) saturate(189%);
+    background-color: #222222de;
+  }
+
+  /* Subcontenedor de los Anchors - Navegacion  */
+  #SubContenedorAnchors_NI {
+    display: flex;
+    gap: 1rem;
+  }
+
+  /* Titulo GWA - Dentro del Navbar */
+  #TituloGrowWeedApp_NI{
+    color: whitesmoke;
+    font-size: .9rem ;
+    font-weight: 200;
+  }
+}

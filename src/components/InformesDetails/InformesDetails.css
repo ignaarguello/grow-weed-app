@@ -42,4 +42,9 @@
       color: rgb(22, 150, 22);
       margin: 1rem 0;
   }
+
+  /* Class Bold */
+  .ItemBold_InformerID{
+    font-weight: bolder;
+  }
 }

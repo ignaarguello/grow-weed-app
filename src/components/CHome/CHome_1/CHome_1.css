@@ -1,6 +1,7 @@
 :root {
   --color-1: #052e16;
   --color-2: #a3e635;
+  --margin--titles: 5rem;
 }
 
 @keyframes iluminarBackground {
@@ -12,8 +13,10 @@
   }
 }
 
+/* Resolucion para Mobiles Android */
 @media screen and (min-width: 320px) {
-  #container-image-title_Home {
+  /* Contendor General - Imagen Grow Weed  */
+  #Container-image-title_Home {
     height: 100vh;
     background-image: url("https://marketplace.canva.com/eEfkI/MAFktreEfkI/1/s2/canva-young-cannabis-plant-MAFktreEfkI.jpg");
     background-size: cover;
@@ -23,30 +26,93 @@
     animation: iluminarBackground 2.3s ease;
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
     padding: 1.5rem;
   }
 
-  #titulo-grow-weed {
+  /*! Contenedor Interior - 1 */
+  .ContenedorInterior_CHome1:nth-child(1) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+  }
+
+  /*! Contenedor Interior - 2 */
+  .ContenedorInterior_CHome1:nth-child(2) {
+    display: none;
+  }
+
+  /* Titulo Grow Weed App */
+  #Titulo-grow-weed {
     color: white;
     letter-spacing: 0.5px;
     margin-top: 0.5em;
   }
 }
 
+/* Resolucion - IPhone 11 */
 @media screen and (min-width: 414px) {
-  #container-image-title_Home {
+  /* Contendor General - Imagen Grow Weed  */
+  #Container-image-title_Home {
     padding: 2.2rem;
   }
-  #titulo-grow-weed {
+
+  /* Titulo Grow Weed App */
+  #Titulo-grow-weed {
     color: white;
     letter-spacing: 0.5px;
     margin-top: 0.5em;
     font-size: 2.5em;
   }
 
-  #titulo-making-nature {
+  /* Titulo Making Nature */
+  #Titulo-making-nature {
     margin-top: 0.3em;
     font-size: 1.2em;
+  }
+}
+
+/* Resolucion para Macbook Air - 1440px */
+@media screen and (min-width: 1440px) {
+  /* Contendor General - Imagen Grow Weed  */
+  #Container-image-title_Home {
+    background-position-x: 0px;
+    background-repeat: no-repeat;
+    background-blend-mode: multiply;
+    align-items: flex-end;
+    flex-direction: row-reverse;
+  }
+
+  /*! Contenedor Interior - 1 */
+  .ContenedorInterior_CHome1:nth-child(1) {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+  }
+
+  /*! Contenedor Interior - 2 */
+  .ContenedorInterior_CHome1:nth-child(2) {
+    width: 50%;
+    height: 100%;
+    display: block;
+  }
+
+  /* Titulo Grow Weed App */
+  #Titulo-grow-weed {
+    color: white;
+    letter-spacing: 0.5px;
+    margin-right: var(--margin--titles);
+    font-size: 4rem;
+  }
+
+  /* Titulo Making Nature */
+  #Titulo-making-nature {
+    font-size: 1.2em;
+    margin-top: 0.8rem;
+    margin-right: var(--margin--titles);
+    margin-bottom: 8rem;
   }
 }

@@ -19,7 +19,8 @@ export default function CInformes_1() {
         <div id='Contenedor-CI_1'>
             <h2 id='titulo-seccionInformes' className='font-extralight tracking-tight text-white'>Sección Informes</h2>
             <div id='contenedor-dataInformes'>
-                <ul role="list" className="divide-y divide-gray-100">
+                <span id='TituloCrearInforme_CInforme1'>+</span>
+                <ul role="list" className="divide-y divide-gray-100 mt-4">
                     {informes?.map((item) => (
                         <li key={item.nombre} className="flex justify-between gap-x-2 p-2 my-4">
                             <div className="flex min-w-0">
