@@ -10,18 +10,26 @@
     backdrop-filter: blur(19px) saturate(189%);
     -webkit-backdrop-filter: blur(19px) saturate(189%);
     background-color: #222222de;
+    justify-content: space-between;
   }
 
   /* Subcontenedor de los Anchors - Navegacion  */
   #SubContenedorAnchors_NI {
     display: flex;
     gap: 1rem;
+    margin-right: 2rem;
   }
 
   /* Titulo GWA - Dentro del Navbar */
   #TituloGrowWeedApp_NI{
     color: whitesmoke;
-    font-size: .9rem ;
-    font-weight: 200;
+    font-weight: 300;
+    margin-left: 2rem;
+  }
+
+  /* Items de las fechas presentes dentro del navbar */
+  .ItemDate_NI{
+      color: whitesmoke;
+      font-weight: 300;
   }
 }

@@ -3,6 +3,8 @@ import { Dialog, Popover, Tab, Transition } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import { Link } from 'react-router-dom';
 import './NavbarInside.css'
+import CTemperatura from '../CTemperatura/CTemperatura';
+import CHora from '../CHour/CHora';
 
 
 const navigation = {
@@ -205,7 +207,8 @@ export default function Example() {
                             <div id='ContenedorGeneralDesktop_NI' className="ml-auto flex items-center">
                                 <h2 id='TituloGrowWeedApp_NI'>Grow Weed App</h2>
                                 <div id="SubContenedorAnchors_NI">
-
+                                    <CTemperatura />
+                                    <CHora />
                                 </div>
                             </div>
                         </div>
