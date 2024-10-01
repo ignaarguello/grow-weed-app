@@ -21,30 +21,27 @@ const features = [
 
 export default function CHome_1() {
     return (
-        <div className="bg-white h-full flex justify-center items-center mt-2 lg:mt-10">
-            <div className="mx-auto max-w-7xl px-2 lg:px-8">
+        <div id='ContenedorGeneral_CHome2' >
+            {/* Subcontenedor - 1 */}
+            <div id='SubContenedor-1_CHome2'>
                 <div className="mx-auto max-w-2xl lg:text-center p-4">
                     <h2 className="text-base font-semibold leading-7 text-lime-700  mt-4 lg:text-4xl" id='tituloGrowWeed'>Grow Weed App</h2>
                     <p className="mt-5 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
                         Destinada al control y crecimiento del Cannabis
                     </p>
                     <p className="mt-8 text-lg leading-8 text-gray-600">
-                        Creada para dar seguimiento y apoyo al cultivo durante todo su ciclo. Pudiendo realizar informes y controles de desarrollo.
+                        <p>1. Cultivo Preciso ✓</p>
+                        <p>2. Seguimiento de Riego ✓</p>
+                        <p>3. Control de Desarrollo ✓</p>
                     </p>
                 </div>
-                <div id='contenedor-cards-refs'>
-                    {
-                        features.map((elem, index) =>
-                            <Link className="card-ref" key={index} to={elem.url}>
-                                <elem.icon className="text-white" id='icon-card-refs' aria-hidden="true" />
-                                <div id='contenedor-info-cards'>
-                                    <h2 className='font-medium tracking-tight text-gray-300 text-base'>{elem.name}</h2>
-                                    <h4 className='font-normal tracking-tight text-gray-400 text-sm mt-2'>{elem.description}</h4>
-                                </div>
-                            </Link>
-                        )
-                    }
-                </div>
+            </div>
+            {/* Subcontenedor - 2 */}
+            <div id='SubContenedor-2_CHome2'>
+                <Link className="Anchor_CHome2">Informes</Link>
+                <Link className="Anchor_CHome2">Riego</Link>
+                <Link className="Anchor_CHome2">Desarrollo</Link>
+                <Link className="Anchor_CHome2">Sobre Mi</Link>
             </div>
         </div>
     )

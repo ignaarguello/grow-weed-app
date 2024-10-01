@@ -13,13 +13,14 @@ export default function CHora() {
         const hora = fecha.getHours()
 
         if (minutos < 10) {
-            setHoraExacta.minutos('0' + fecha)
+            setHoraExacta({ hora: hora, minutos: '0' + minutos })
+        } else {
+            setHoraExacta({
+                minutos: minutos,
+                hora: hora,
+            })
         }
 
-        setHoraExacta({
-            minutos: minutos,
-            hora: hora,
-        })
 
     }, [])
 

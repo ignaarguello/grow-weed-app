@@ -107,7 +107,7 @@ export default function Example() {
                                 {/* Ingreso y Crear cuenta en Mobile */}
                                 <div className="space-y-6 border-t border-gray-200 px-4 py-6">
                                     <div className="flow-root">
-                                        <a href="#" className="-m-2 block p-2 font-medium text-red-900">
+                                        <a href="#" className="-m-2 block p-2 font-medium text-lime-900">
                                             Ingreso
                                         </a>
                                     </div>

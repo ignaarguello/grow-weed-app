@@ -3,6 +3,7 @@
   --color-2: #a3e635;
 }
 
+/* Propiedad Gradiente para el titulo */
 #tituloGrowWeed {
   background-image: linear-gradient(
     to right,
@@ -13,42 +14,41 @@
   -webkit-text-fill-color: transparent;
 }
 
-@media screen and (min-width: 320px) {
-  #contenedor-cards-refs {
-    /* border: 2px solid red; */
-    margin: 1rem 0 2rem 0;
+/* Resolucion para 360px - Mobiles Android */
+@media screen and (min-width: 360px) {
+  /* Contenedor General */
+  #ContenedorGeneral_CHome2 {
+    height: 100vh;
+  }
+
+  /* SubContenedor - 1 */
+  #SubContenedor-1_CHome2 {
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
-    justify-content: center;
   }
 
-  .card-ref {
-    /* border: 2px solid forestgreen; */
-    height: 10em;
-    border-radius: 15px;
-    background-color: #000000e3;
+  /* SubContenedor - 2 */
+  #SubContenedor-2_CHome2{
+    height: 50vh;
     display: flex;
+    flex-wrap: wrap;
+    padding: 5px;
+  }
+
+  /* Anchors */
+  .Anchor_CHome2{
+    background-color: #000000e5;
+    width: 47%;
+    margin: 5px;
+    color: whitesmoke;
+    display: flex;
+    justify-content: center;
     align-items: center;
-  }
-
-  #icon-card-refs {
-    /* border: 2px solid green; */
-    height: 80%;
-    width: 20%;
-    padding: 1rem;
-    color: #1f8109;
-    border-right: 0.5px solid gray;
-  }
-
-  #contenedor-info-cards {
-    /* border: 2px solid blue; */
-    width: 80%;
-    text-align: center;
-    padding: 1rem;
+    border-radius: 20px;
   }
 }
 
+/* Resolucion 414 - IPhone 11 */
 @media screen and (min-width: 414px) {
   #contenedor-cards-refs {
     margin: 2rem 0 2rem 0;

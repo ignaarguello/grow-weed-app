@@ -21,15 +21,15 @@
   }
 
   /* Titulo GWA - Dentro del Navbar */
-  #TituloGrowWeedApp_NI{
+  #TituloGrowWeedApp_NI {
     color: whitesmoke;
     font-weight: 300;
     margin-left: 2rem;
   }
 
   /* Items de las fechas presentes dentro del navbar */
-  .ItemDate_NI{
-      color: whitesmoke;
-      font-weight: 300;
+  .ItemDate_NI {
+    color: whitesmoke;
+    font-weight: 300;
   }
 }
