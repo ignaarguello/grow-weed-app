@@ -3,6 +3,7 @@ import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux'
 import { informesActions } from '../../../redux/actions/Informes';
 import { Link } from 'react-router-dom';
+import CrearInforme from '../../CrearInforme/CrearInforme';
 
 export default function CInformes_1() {
     const dispatch = useDispatch()
@@ -17,7 +18,7 @@ export default function CInformes_1() {
     return (
         <div id='Contenedor-CI_1'>
             <h2 id='titulo-seccionInformes' className='font-extralight tracking-tight text-white'>Sección Informes</h2>
-            <span id='TituloCrearInforme_CInforme1'>+</span>
+            <CrearInforme/>
             <div id='contenedor-dataInformes'>
                 <ul id='ContenedorLista_CInformes1' role="list" className="divide-y divide-gray-100 mt-4">
                     {informes?.map((item) => (

@@ -1,0 +1,58 @@
+:root {
+  --tamaño--icono: 4rem;
+}
+
+/* Resolucion 360px - Mobiles Android */
+@media screen and (min-width: 360px) {
+  /* ? Contenedor General */
+  #ContenedorGeneral_CrearInforme {
+    /* border: 2px solid blue; */
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* ? Contenedor del icono - IoMdAddCircle  */
+  #ContenedorIcono_CrearInforme {
+    /*  border: 2px solid red; */
+    display: flex;
+    justify-content: center;
+    width: max-content;
+  }
+
+  /* * Propiedades del Icono */
+  #IconoCrearInforme_CrearInforme {
+    /*  border: 2px solid greenyellow; */
+    width: var(--tamaño--icono);
+    height: var(--tamaño--icono);
+  }
+
+  /* ? Formulario para crear informes */
+  #Form_CrearInformes_CrearInforme {
+    /*  border: 2px solid slateblue; */
+    margin-top: 2rem;
+    height: 10rem;
+    width: 90%;
+  }
+
+  /* ? Contenedor para cada input y su label */
+  .ContenedorParaCadaInputLabel_CrearInforme {
+    /* border: 2px solid aqua; */
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+    justify-content: center;
+  }
+
+  /* * Propiedades del label */
+  .ContenedorParaCadaInputLabel_CrearInforme > label {
+    /* border: 2px solid brown; */
+  }
+
+  /* * Propiedades del input */
+  .ContenedorParaCadaInputLabel_CrearInforme > input {
+    /* border: 2px solid brown; */
+    border-bottom: 1px solid gainsboro;
+  }
+}

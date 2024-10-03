@@ -30,9 +30,9 @@ export default function CHome_1() {
                         Destinada al control y crecimiento del Cannabis
                     </p>
                     <p className="mt-8 text-lg leading-8 text-gray-600">
-                        <p>1. Cultivo Preciso ✓</p>
-                        <p>2. Seguimiento de Riego ✓</p>
-                        <p>3. Control de Desarrollo ✓</p>
+                        <p className='text-lime-800'>1. Cultivo Preciso ✓</p>
+                        <p className='text-lime-800'>2. Seguimiento de Riego ✓</p>
+                        <p className='text-lime-800'>3. Control de Desarrollo ✓</p>
                     </p>
                 </div>
             </div>
