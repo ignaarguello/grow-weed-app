@@ -1,4 +1,3 @@
-import React from 'react'
 import './CrearInforme.css'
 
 /* Hooks */
@@ -9,9 +8,19 @@ import { IoMdAddCircle } from "react-icons/io";
 
 export default function CrearInforme() {
     const [isFormVisible, setIsFormVisible] = useState(false);
+    const [riego, setRiego] = useState(false);
+    const [fertilizante, setFertilizante] = useState(false);
 
     const toggleForm = () => {
         setIsFormVisible(!isFormVisible);
+    };
+
+    const handleRiegoChange = () => {
+        setRiego(!riego);
+    };
+
+    const handleFertilizanteChange = () => {
+        setFertilizante(!fertilizante);
     };
 
     return (
@@ -24,6 +33,22 @@ export default function CrearInforme() {
                     <div className='ContenedorParaCadaInputLabel_CrearInforme'>
                         <label htmlFor="nombre">Nombre:</label>
                         <input type="text" id="nombre" />
+                    </div>
+                    <div id="ContenedorBotonesForm_CrearInforme">
+                        {/* Transplante */}
+                        <div
+                            className={riego ? 'boton-activo' : 'boton'}
+                            onClick={handleRiegoChange}
+                        >
+                            Transplante
+                        </div>
+                        {/* Fertilizantes */}
+                        <div
+                            className={fertilizante ? 'boton-activo' : 'boton'}
+                            onClick={handleFertilizanteChange}
+                        >
+                            Fertilizantes
+                        </div>
                     </div>
                 </form>
             )}
