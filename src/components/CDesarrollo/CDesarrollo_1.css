@@ -2,12 +2,9 @@
 @media screen and (min-width: 360px) {
   /* Contenedor General del Componente Desarrollo - 1 */
   #ContenedorGeneral_CDesarrollo_1 {
-    background-color: rgba(0, 0, 0, 0.88);
     border-radius: 10px;
-    height: 8rem;
-    padding: .6rem;
-    margin-top: .8rem;
     display: flex;
+    margin-top: 1.2rem;
     flex-direction: column;
     justify-content: center;
   }
