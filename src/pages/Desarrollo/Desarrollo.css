@@ -1,0 +1,14 @@
+/*  360px - Android Mobiles */
+@media screen and (min-width:360px) {
+    /* Contenedor Page de Desarrollo */
+    #ContenedorPageDesarrollo_Desarrollo{
+        min-height: 100vh;
+        padding: 1rem;
+        background-image: url('../../images/cannabis1.jpg');
+        background-size: cover;
+        background-position: -114px;
+        /* Flex */
+        display: flex;
+        flex-direction: column;
+    }
+}

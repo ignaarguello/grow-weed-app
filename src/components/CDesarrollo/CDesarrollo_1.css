@@ -1,0 +1,27 @@
+/* 360px - Mobiles Android */
+@media screen and (min-width: 360px) {
+  /* Contenedor General del Componente Desarrollo - 1 */
+  #ContenedorGeneral_CDesarrollo_1 {
+    background-color: rgba(0, 0, 0, 0.88);
+    border-radius: 10px;
+    height: 8rem;
+    padding: .6rem;
+    margin-top: .8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  /* Titulo Principal - Control Desarrollo */
+  .TituloPrincipalDesarrollo_CDesarrollo_1 {
+    color: #cae654;
+    font-size: .8rem;
+    font-weight: 600;
+  }
+
+  /* Titulo Grow Weed App */
+  .TituloGWA_CDesarrollo_1{
+      color: white;
+      font-size: 1.8rem;
+  }
+}
