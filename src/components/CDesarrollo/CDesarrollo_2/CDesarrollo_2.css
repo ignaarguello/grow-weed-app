@@ -36,7 +36,6 @@
 
   /* Titulo del Indicador */
   .ItemTitulo_CDesarrollo_2 {
-    height: 50%;
     color: var(--color-principal--);
     display: flex;
     justify-content: center;
