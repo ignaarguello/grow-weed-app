@@ -3,6 +3,7 @@
     /* Contenedor Page de Desarrollo */
     #ContenedorPageDesarrollo_Desarrollo{
         min-height: 100vh;
+        width: 100%;
         padding: 1rem;
         background-image: url('../../images/cannabis1.jpg');
         background-size: cover;
@@ -10,5 +11,13 @@
         /* Flex */
         display: flex;
         flex-direction: column;
+    }
+}
+
+/*  414px - IPhone 11 */
+@media screen and (min-width:414px) {
+    /* Contenedor Page de Desarrollo */
+    #ContenedorPageDesarrollo_Desarrollo{
+        background-position: -70px;
     }
 }
