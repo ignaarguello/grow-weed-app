@@ -1,0 +1,7 @@
+/* 360px - Mobiles (Android) */
+@media screen and (min-width:360px) {
+    #ContenedorGeneral_CDesarrollo_3{
+        border: 4px solid red;
+        margin-top: 1rem;
+    }
+}

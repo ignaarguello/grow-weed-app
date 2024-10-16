@@ -1,0 +1,24 @@
+/*  360px - Mobiles Android */
+@media screen and (min-width: 360px) {
+  /* Image Anchor - Contenedor General */
+  #ContenedorCardImageAnchor_PanelFlex{
+      min-height: 40vh;
+      background-size: cover;
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+  }
+
+  /* Titulo del Panel Flex */
+  #Titulo_PanelFlex{
+      font-size: 1.4rem;
+      color: white;
+      background-color: rgba(0, 0, 0, 0.904);
+      padding: .8rem;
+      backdrop-filter: blur(10px);
+      width: 40%;
+      text-align: center;
+      border-radius: 0px 20px 20px 0px;
+      margin-top: 3.5rem;
+  }
+}
