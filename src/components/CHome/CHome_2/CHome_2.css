@@ -1,24 +1,52 @@
 :root {
   --color-1: #052e16;
   --color-2: #a3e635;
-}
-
-/* Propiedad Gradiente para el titulo */
-#tituloGrowWeed {
-  background-image: linear-gradient(
-    to right,
-    var(--color-1) 0%,
-    var(--color-2) 100%
-  );
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
+  --altura--subcontenedores: 50%;
 }
 
 /* Resolucion para 360px - Mobiles Android */
 @media screen and (min-width: 360px) {
   /* Contenedor General */
   #ContenedorGeneral_CHome2 {
-    height: 100vh;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 3rem;
+  }
+
+  /* Subcontenedor - 1 */
+  .Subcontenedor_CHome2:nth-child(1) {
+    height: var(--altura--subcontenedores);
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  /* Titulo - (Grow weed app)  */
+  #Titulo-SubContenedor-1_CHome1{
+    margin-top: 2rem;
+    margin-left: 1rem;
+    align-self: flex-start;
+    font-weight: bold;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  }
+
+  /* Texto  - (Desarrollada para...) */
+  #Texto-SubContenedor-1_CHome1{
+    font-size: 1.3rem;
+    text-align: center;
+    line-height: 3.5rem;
+    margin: 1rem;
+  }
+
+  /* Subcontenedor - 2 */
+  .Subcontenedor_CHome2:nth-child(2) {
+    min-height: var(--altura--subcontenedores);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: .6rem;
   }
 
   /* SubContenedor - 1 */
@@ -28,7 +56,7 @@
   }
 
   /* SubContenedor - 2 */
-  #SubContenedor-2_CHome2{
+  #SubContenedor-2_CHome2 {
     height: 50vh;
     display: flex;
     flex-wrap: wrap;
@@ -36,7 +64,7 @@
   }
 
   /* Anchors */
-  .Anchor_CHome2{
+  .Anchor_CHome2 {
     background-color: #000000e5;
     width: 47%;
     margin: 5px;
