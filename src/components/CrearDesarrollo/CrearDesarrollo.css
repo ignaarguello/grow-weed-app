@@ -3,7 +3,7 @@
   /*? Contenedor Principal */
   #ContenedorPrincipal_CrearDesarrollo {
     width: 100%;
-    min-height:10vh ;
+    min-height: 10vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -39,12 +39,11 @@
     padding-left: 0.2rem;
   }
 
-
   /* Div Contenedor del Button Crear */
-  #ContenedorButtonCrear_CrearDesarrollo{
-      display: flex;
-      justify-content: center;
-      margin-top: 2rem;
+  #ContenedorButtonCrear_CrearDesarrollo {
+    display: flex;
+    justify-content: center;
+    margin: 1.5rem;
   }
 
   /* Propiedades del Button - Crear Desarrollo */
