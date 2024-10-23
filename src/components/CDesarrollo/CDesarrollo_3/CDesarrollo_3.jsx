@@ -15,7 +15,6 @@ export default function CDesarrollo_3() {
       {/* Card de cada desarrollo individual */}
       {
         data_desarrollo.map((elem, index) =>
-
           <CardDesarrollo key={index}
             imagen={elem.imagen}
             nombre={elem.nombre}
@@ -23,7 +22,6 @@ export default function CDesarrollo_3() {
             genetica={elem.genetica}
             fecha_plantacion={elem.fecha_plantacion}
           />
-
         )
       }
     </div>
