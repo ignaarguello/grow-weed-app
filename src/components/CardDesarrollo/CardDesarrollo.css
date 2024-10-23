@@ -1,0 +1,80 @@
+:root {
+  --ancho--icono: 1.6rem;
+  --alto--icono: 1.6rem;
+}
+
+/** Resolucion 360px - Mobiles Android */
+@media screen and (min-width: 360px) {
+  /* Contenedor Principal de Card de Desarrolllo */
+  #ContenedorPrincipal_CardDesarrollo {
+    margin: .6rem 0;
+  }
+
+  /* Propiedades del Subcontenedor Individual  */
+  #SubcontenedorIndividual_CardDesarrollo {
+    border: 3px solid gainsboro;
+    display: flex;
+    padding: 10px;
+    border-radius: 10px;
+    justify-content: space-between;
+    background: #e0e0e0;
+    box-shadow: 10px 10px 20px #bebebe, -10px -10px 20px #ffffff;
+    width: 100%;
+    height: 100%;
+  }
+
+  /* Imagen Profile */
+  #ImageProfileDesarrollo_CardDesarrollo {
+    width: 4rem;
+    height: 4rem;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+
+  /* Nombre - Titulo */
+  #NombreDesarrollo_CardDesarrollo {
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+  }
+
+  /*? Contenedor del Nombre e Icono de Estado */
+  #ContenedorNombreyEstado_CardDesarrollo {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    justify-content: center;
+    margin-left: 0.5rem;
+    gap: 0.5rem;
+  }
+
+  /* Icono - Estado Desarrollo */
+  #IconDesarrollo_CardDesarrollo {
+    width: var(--ancho--icono);
+    height: var(--alto--icono);
+    color: #eab308;
+  }
+
+  /* Icono - Estado Cosecha */
+  #IconCosecha_CardDesarrollo {
+    width: var(--ancho--icono);
+    height: var(--alto--icono);
+    color: #65a30d;
+  }
+
+  /*? Contenedor Genetica y Fecha Plantacion */
+  #ContenedorGeneticayFechaPlantacion {
+    width: 40%;
+    align-items: flex-end;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* Genetica */
+  #FechaDesarrollo_CardDesarrollo,
+  #GeneticaDesarrollo_CardDesarrollo {
+    font-weight: bold;
+  }
+}
