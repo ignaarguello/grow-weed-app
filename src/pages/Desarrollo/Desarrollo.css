@@ -5,7 +5,7 @@
         min-height: 100vh;
         width: 100%;
         padding: 1rem;
-        background-image: url('../../images/cannabis1.jpg');
+        /* background-image: url('../../images/cannabis1.jpg'); */
         background-size: cover;
         background-position: -114px;
         /* Flex */

@@ -1,0 +1,61 @@
+/* Resolucion 360px - Mobiles Android */
+@media screen and (min-width: 360px) {
+  /*? Contenedor Principal */
+  #ContenedorPrincipal_CrearDesarrollo {
+    width: 100%;
+    min-height:10vh ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0.5rem;
+  }
+
+  /* Propiedades del Formulario */
+  #Form_CrearInformes_CrearInforme {
+    width: 100%;
+    height: 100%;
+  }
+
+  /*? Contenedor para cada input y su label */
+  .ContenedorParaCadaInputLabel_CrearDesarrollo {
+    /* border: 2px solid aqua; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.3rem;
+    margin: 1rem 0;
+  }
+
+  /* * Propiedades del label */
+  .ContenedorParaCadaInputLabel_CrearDesarrollo > label {
+    /* border: 2px solid brown; */
+    font-weight: bold;
+  }
+
+  /* * Propiedades del input */
+  .ContenedorParaCadaInputLabel_CrearDesarrollo > input {
+    /* border: 2px solid brown; */
+    border-bottom: 1px solid gainsboro;
+    padding-left: 0.2rem;
+  }
+
+
+  /* Div Contenedor del Button Crear */
+  #ContenedorButtonCrear_CrearDesarrollo{
+      display: flex;
+      justify-content: center;
+      margin-top: 2rem;
+  }
+
+  /* Propiedades del Button - Crear Desarrollo */
+  #ButtonCrear_CrearDesarrollo {
+    align-self: center;
+    text-align: center;
+    padding: 15px;
+    background-color: black;
+    border-radius: 50px;
+    color: white;
+    width: 50%;
+    font-weight: 500;
+  }
+}
