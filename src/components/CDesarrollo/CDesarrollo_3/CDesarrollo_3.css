@@ -10,7 +10,7 @@
 
   /* Contenedor de las Cards */
   #ContenedorCards_CDesarrollo_3{
-    height: 50vh;
+    height: 60vh;
     overflow-x: scroll;
   }
 }
