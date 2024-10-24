@@ -2,9 +2,15 @@
 @media screen and (min-width: 360px) {
   /* Contenedor General de Desarrollo - 3 */
   #ContenedorGeneral_CDesarrollo_3 {
-    min-height: 30vh;
+    min-height: 10vh;
     margin-top: 1rem;
     display: flex;
     flex-direction: column;
+  }
+
+  /* Contenedor de las Cards */
+  #ContenedorCards_CDesarrollo_3{
+    height: 50vh;
+    overflow-x: scroll;
   }
 }

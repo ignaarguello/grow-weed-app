@@ -26,7 +26,7 @@ export default function CrearInforme() {
     return (
         <div id='ContenedorGeneral_CrearInforme'>
             <div id="ContenedorIcono_CrearInforme" onClick={toggleForm}>
-                <IoMdAddCircle id='IconoCrearInforme_CrearInforme' />
+                <IoMdAddCircle class='IconoCrear' />
             </div>
             {isFormVisible && (
                 <form action="" id='Form_CrearInformes_CrearInforme'>

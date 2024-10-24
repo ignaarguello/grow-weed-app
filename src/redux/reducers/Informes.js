@@ -12,14 +12,12 @@ const initialState = {
 const informesReducer = createReducer(initialState, (builder) => {
     builder
         .addCase(getInformes.fulfilled, (state, action) => {
-            console.log(action)
             return {
                 ...state,
                 informes: action.payload.data
             }
         })
         .addCase(getInforme_ID.fulfilled, (state, action) => {
-            console.log(action.payload.data)
             return {
                 ...state,
                 informe_id: action.payload.data

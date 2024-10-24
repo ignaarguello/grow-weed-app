@@ -1,5 +1,5 @@
 :root {
-  --tamaño--icono: 4rem;
+  --tamaño--icono: 3rem;
 }
 
 /* Resolucion 360px - Mobiles Android */
@@ -22,7 +22,7 @@
   }
 
   /* * Propiedades del Icono */
-  #IconoCrearInforme_CrearInforme {
+  .IconoCrear {
     /*  border: 2px solid greenyellow; */
     width: var(--tamaño--icono);
     height: var(--tamaño--icono);
