@@ -1,0 +1,10 @@
+/* Estilos de la Page - Riegos */
+
+/* * Resolucion 360px - Mobiles Android */
+@media screen and (min-width: 360px) {
+  /* Contenedor Principal Page Riegos */
+  #ContenedorPrincipal_PageRiegos {
+    min-height: 100vh;
+    padding: 1rem;
+  }
+}

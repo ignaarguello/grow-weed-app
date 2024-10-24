@@ -1,0 +1,10 @@
+/* Estilos de Page - Informes */
+
+/* * Resolucion 360px - Mobiles Android */
+@media screen and (min-width:360px) {
+    /* Contenedor Principal de Informes */
+    #ContenedorPrincipal_PageInformes{
+        border: 2px solid blue;
+        padding: 1rem;
+    }
+}
