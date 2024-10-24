@@ -23,12 +23,12 @@ export default function CHome_1() {
         {
             titulo: 'Riego',
             imagen: ImageRiego,
-            url: '/riego'
+            url: '/riegos'
         },
         {
             titulo: 'Desarrollo',
             imagen: ImageDesarrollo,
-            url: '/desarrollo'
+            url: '/desarrollos'
         },
     ]
     return (

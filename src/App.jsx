@@ -1,14 +1,18 @@
+//Estilos
 import './App.css'
+
+//ReactRouterDom
 import { BrowserRouter, Route, Routes } from "react-router-dom";
+
+//Redux
 import { Provider } from 'react-redux';
 import { store } from './redux/store'
 
-// Importacion de Pages
+//Pages
 import Home from './pages/Home/Home'
 import Informes from './pages/Informes/Informes'
-import Desarrollo from './pages/Desarrollo/Desarrollo'
-import Imagenes from './pages/Imagenes/Imagenes'
-import Anotaciones from './pages/Anotaciones/Anotaciones';
+import Desarrollos from './pages/Desarrollos/Desarrollos'
+import Riegos from './pages/Riegos/Riegos'
 import InformesDetails from './components/InformesDetails/InformesDetails'
 
 function App() {
@@ -20,9 +24,8 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/informes" element={<Informes />} />
-            <Route path="/desarrollo" element={<Desarrollo />} />
-            <Route path="/imagenes" element={<Imagenes />} />
-            <Route path="/anotaciones" element={<Anotaciones />} />
+            <Route path="/desarrollos" element={<Desarrollos />} />
+            <Route path="/riegos" element={<Riegos />} />
             <Route path="/informes/:id" element={<InformesDetails />} />
           </Routes>
         </BrowserRouter>

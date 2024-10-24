@@ -1,18 +1,18 @@
+//Estilos
 import './InformesDetails.css'
 
-// Use params para captar el valor que llega por url
+//Use params para captar el valor que llega por url
 import { useParams } from 'react-router-dom'
 
-// Hooks 
+//Hooks 
 import { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
-import { Link } from 'react-router-dom'
 
-// Action
+//Redux - Actions 
 import { informesActions } from '../../redux/actions/Informes'
 
-// Icon
-import { MdOutlineArrowBackIosNew } from "react-icons/md";
+//Componentes
+import BotonVolver from '../BotonVolver/BotonVolver'
 
 
 export default function InformesDetails() {
@@ -28,9 +28,7 @@ export default function InformesDetails() {
 
   return (
     <div id='ContenedorGeneral_InformesID'>
-      <Link to='/informes' id='ContenedorIcono_InformesID'>
-        <MdOutlineArrowBackIosNew id='IconoBack_InformesID' />
-      </Link>
+      <BotonVolver url='/informes' />
       <h2 id='TituloDetalleInforme_InformesID'>Detalle de Informe</h2>
       {/* Contenedor de los Detalles */}
       <div id='ContenedorDetalles_InformesID'>

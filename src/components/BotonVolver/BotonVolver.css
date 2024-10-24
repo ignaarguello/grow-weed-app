@@ -1,0 +1,14 @@
+/* * Resolucion 360px - Mobiles Android */
+@media screen and (min-width: 360px) {
+  /* Contenedor Principal del Icono */
+  /* Propieades del Icono */
+  #IconoBack_InformesID {
+    width: 2.5rem;
+    height: 2.5rem;
+    background-color: black;
+    color: white;
+    padding: 7px;
+    border-radius: 50%;
+    margin: 1rem 0;
+  }
+}
