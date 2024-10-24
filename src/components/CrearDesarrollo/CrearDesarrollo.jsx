@@ -1,14 +1,24 @@
 // Estilos
 import './CrearDesarrollo.css'
 
-/* Hooks */
+// Hooks 
 import { useState } from 'react';
 import useFormattedDate from '../../hooks/FormattedDate';
 
-/* Icono */
-import { IoMdAddCircle } from "react-icons/io";
+// Iconos 
+import { RiAddCircleFill } from "react-icons/ri";
+
+// Redux - Actions - Hooks
+import { useDispatch } from 'react-redux';
+import { desarrolloActions } from '../../redux/actions/Desarrollos';
+
 
 export default function CrearDesarrollo() {
+    /* Elementos para Redux */
+    const dispatch = useDispatch();
+    const { crearNuevoDesarrollo } = desarrolloActions
+
+
     /* Varbiables de Hook de Fecha */
     const myDate = new Date();
     const formattedDate = useFormattedDate(myDate);
@@ -31,7 +41,6 @@ export default function CrearDesarrollo() {
         fecha_plantacion: formattedDate,
     }
 
-
     /* Funcion que setea el estado del formulario */
     const toggleForm = () => {
         setIsFormVisible(!isFormVisible);
@@ -39,13 +48,14 @@ export default function CrearDesarrollo() {
 
     /* Funciona que envia la data al servidor */
     const sendData = () => {
-        console.log(dataToSend)
+        dispatch(crearNuevoDesarrollo(dataToSend))
+        setIsFormVisible(!isFormVisible);
     }
 
     return (
         <div id="ContenedorPrincipal_CrearDesarrollo">
             <div id="ContenedorIcono_CrearDesarrollo" onClick={toggleForm}>
-                <IoMdAddCircle id='IconoCrearInforme_CrearInforme' />
+                <RiAddCircleFill className='IconoCrear' />
             </div>
             {/* Formulario para crear desarrollo - estado inicial (Hidden) */}
             {isFormVisible && (
