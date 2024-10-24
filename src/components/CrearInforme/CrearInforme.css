@@ -23,9 +23,9 @@
 
   /* * Propiedades del Icono */
   .IconoCrear {
-    /*  border: 2px solid greenyellow; */
     width: var(--tamaño--icono);
     height: var(--tamaño--icono);
+    margin: 1rem 0;
   }
 
   /* ? Formulario para crear informes */
